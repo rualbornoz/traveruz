@@ -24,24 +24,24 @@
   --car: #b0364a;
   --bus: #5b7a14;
   --pre: #b3541e; --mus: #8c5a2b; --att: #b02a78; --tra: #2a7f9e; --vis: #2f7d4f;
-  --shadow: 0 1px 3px rgba(20, 32, 44, 0.08), 0 6px 18px rgba(20, 32, 44, 0.1);
-  --shadow-field: 0 3px 6px rgba(20, 32, 44, 0.14), 0 16px 40px rgba(20, 32, 44, 0.24);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 6px 18px rgba(0, 0, 0, 0.1);
+  --shadow-field: 0 3px 6px rgba(0, 0, 0, 0.14), 0 16px 40px rgba(0, 0, 0, 0.24);
   --field-bg: #ffffff;
   --field-fg: #14202c;
   --bg: #ffffff;
   --surface: #ffffff;
-  --fg: #333333;
-  --body: #555555;
-  --box: #f5f5f5;
+  --fg: #111111;
+  --body: #4a4a4a;
+  --box: #f3f3f3;
   --accent: #000000;
   --on-accent: #ffffff;
   --brand: #000000;
-  --muted: #555555;
-  --line: #cfd6de;
+  --muted: #6b6b6b;
+  --line: #e3e3e3;
   --air: #1f55a8;
   --hot: #8a3f78;
   --age: #23764f;
-  --focus: #1f55a8;
+  --focus: #111111;
   --font-display: "Montserrat", "Helvetica Neue", Arial, sans-serif;
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
@@ -57,17 +57,17 @@
     --pre: #f0a36b; --mus: #d2a679; --att: #f08ac4; --tra: #7cc3dd; --vis: #7ad0a0;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.25);
     --shadow-field: 0 2px 4px rgba(0, 0, 0, 0.5), 0 10px 28px rgba(0, 0, 0, 0.5);
-    --bg: #0f1720;
-    --surface: #16212c;
-    --fg: #e6ecf2;
-    --muted: #93a1b1;
-  --body: #c3ced9;
-  --box: #243242;
-    --line: #2a3745;
+    --bg: #1a1a1a;
+    --surface: #242424;
+    --fg: #f2f2f2;
+    --muted: #a8a8a8;
+  --body: #cfcfcf;
+  --box: #2e2e2e;
+    --line: #383838;
     --air: #7fb0f5;
     --hot: #d49ac6;
     --age: #7ccba0;
-    --focus: #7fb0f5;
+    --focus: #ffffff;
     color-scheme: dark;
   }
 }
@@ -81,17 +81,17 @@
   --pre: #f0a36b; --mus: #d2a679; --att: #f08ac4; --tra: #7cc3dd; --vis: #7ad0a0;
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 4px 12px rgba(0, 0, 0, 0.25);
   --shadow-field: 0 2px 4px rgba(0, 0, 0, 0.5), 0 10px 28px rgba(0, 0, 0, 0.5);
-  --bg: #0f1720;
-  --surface: #16212c;
-  --fg: #e6ecf2;
-  --muted: #93a1b1;
-  --body: #c3ced9;
-  --box: #243242;
-  --line: #2a3745;
+  --bg: #1a1a1a;
+  --surface: #242424;
+  --fg: #f2f2f2;
+  --muted: #a8a8a8;
+  --body: #cfcfcf;
+  --box: #2e2e2e;
+  --line: #383838;
   --air: #7fb0f5;
   --hot: #d49ac6;
   --age: #7ccba0;
-  --focus: #7fb0f5;
+  --focus: #ffffff;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -399,12 +399,12 @@ details.qa + details.qa { margin-top: 4px; }
 details.qa summary { padding-top: 22px !important; padding-bottom: 22px !important; }
 details.qa .ans { padding-bottom: 22px !important; }
 .pop, .hcard, .card { border: 1px solid #f0f0f0 !important; box-shadow: none !important; }
-:root[data-theme="dark"] .pop, :root[data-theme="dark"] .hcard, :root[data-theme="dark"] .card { border-color: #3a4756 !important; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pop, :root:not([data-theme="light"]) .hcard, :root:not([data-theme="light"]) .card { border-color: #3a4756 !important; } }
+:root[data-theme="dark"] .pop, :root[data-theme="dark"] .hcard, :root[data-theme="dark"] .card { border-color: #3d3d3d !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .pop, :root:not([data-theme="light"]) .hcard, :root:not([data-theme="light"]) .card { border-color: #3d3d3d !important; } }
 details.qa { background: transparent !important; border: 1px solid #f0f0f0 !important; box-shadow: none !important; }
 details.qa[open] { background: var(--surface) !important; border-color: transparent !important; box-shadow: 0 8px 28px rgba(0,0,0,0.18) !important; }
-:root[data-theme="dark"] details.qa:not([open]) { border-color: #3a4756 !important; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) details.qa:not([open]) { border-color: #3a4756 !important; } }
+:root[data-theme="dark"] details.qa:not([open]) { border-color: #3d3d3d !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) details.qa:not([open]) { border-color: #3d3d3d !important; } }
 .tile:not([aria-pressed="true"]) .n, .chip:not([aria-pressed="true"]) .n { color: #aaa !important; opacity: 1 !important; }
 details.qa summary::after { border-color: #b5b5b5 !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .tile:not([aria-pressed="true"]) .n, :root:not([data-theme="light"]) .chip:not([aria-pressed="true"]) .n { color: #7f8c9b !important; } :root:not([data-theme="light"]) details.qa summary::after { border-color: #7f8c9b !important; } }
@@ -415,8 +415,8 @@ details.qa summary::after { border-color: #b5b5b5 !important; }
 .pop .pop-art, .hcard .pop-art { width: auto; margin: 10px 10px 0; border-radius: 22px; overflow: hidden; }
 .pop-body { padding-left: 18px; padding-right: 18px; }
 .chip:not([aria-pressed="true"]), .tile:not([aria-pressed="true"]) { background: var(--box) !important; }
-.field input { box-shadow: 0 0 30px 4px rgba(20, 32, 44, 0.16) !important; }
-.field input:focus { box-shadow: 0 0 0 4px color-mix(in srgb, var(--focus) 28%, transparent), 0 0 34px 6px rgba(20, 32, 44, 0.2) !important; }
+.field input { box-shadow: 0 0 30px 4px rgba(0, 0, 0, 0.16) !important; }
+.field input:focus { box-shadow: 0 0 0 4px color-mix(in srgb, var(--focus) 28%, transparent), 0 0 34px 6px rgba(0, 0, 0, 0.2) !important; }
 
 .card a.book, .hcard a.book { display: inline-flex; align-items: center; justify-content: center; gap: 8px; margin-top: 10px; padding: 9px 16px; border-radius: 999px; align-self: flex-start; width: fit-content; background: var(--accent); color: var(--on-accent); font-size: 13.5px; font-weight: 600; text-decoration: none; }
 .card a.book svg, .hcard a.book svg { width: 16px; height: 16px; flex: none; }
@@ -444,12 +444,12 @@ details.qa summary::after { border-color: #b5b5b5 !important; }
 .popmore { display: flex; justify-content: center; margin-top: 18px; }
 .viewall { font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; border: 0; border-radius: 999px; padding: 10px 24px; background: var(--accent); color: var(--on-accent); }
 .morewrap { margin-top: 18px; }
-.morebtn { display: block; width: 100%; font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; padding: 14px 20px; border-radius: 999px; background: transparent; color: var(--fg); border: 1px solid #d9d9d9; }
+.morebtn { display: block; width: 100%; font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; padding: 14px 20px; border-radius: 999px; background: transparent; color: var(--fg); border: 1px solid #dcdcdc; }
 .morebtn:hover { background: rgba(0, 0, 0, 0.03); }
 .morebtn:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
-:root[data-theme="dark"] .morebtn { border-color: #3a4756; }
+:root[data-theme="dark"] .morebtn { border-color: #3d3d3d; }
 :root[data-theme="dark"] .morebtn:hover { background: rgba(255, 255, 255, 0.06); }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .morebtn { border-color: #3a4756; } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .morebtn { border-color: #3d3d3d; } }
 .viewall:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
 .pop { font: inherit; text-align: left; padding: 0; border: 0; background: var(--box); border-radius: 18px; overflow: hidden; cursor: pointer; display: flex; flex-direction: column; color: var(--fg); }
 .pop .pop-art { aspect-ratio: 16 / 10; }
@@ -478,11 +478,11 @@ details.qa summary::after { border-color: #b5b5b5 !important; }
 .qclear { position: absolute; right: 60px; top: 50%; transform: translateY(-50%); width: 28px; height: 28px; padding: 6px; border: 0; border-radius: 50%; background: #eeeeee; color: #333333; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 .qclear:hover { background: #f0f0f0; }
 #svc { padding: 4px 4px 12px; margin-bottom: -4px; }
-#svc .tile, #svc .tile[aria-pressed="true"] { border: 1px solid #ffffff !important; box-shadow: 0 2px 8px rgba(20, 32, 44, 0.12) !important; }
-.field input, .field input:focus, .field select, .field select:focus { border: 1px solid #d9d9d9 !important; }
+#svc .tile, #svc .tile[aria-pressed="true"] { border: 1px solid #ffffff !important; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12) !important; }
+.field input, .field input:focus, .field select, .field select:focus { border: 1px solid #dcdcdc !important; }
 .field input:focus { border-color: #b8b8b8 !important; }
-:root[data-theme="dark"] .field input, :root[data-theme="dark"] .field select { border-color: #3a4756 !important; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .field input, :root:not([data-theme="light"]) .field select { border-color: #3a4756 !important; } }
+:root[data-theme="dark"] .field input, :root[data-theme="dark"] .field select { border-color: #3d3d3d !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .field input, :root:not([data-theme="light"]) .field select { border-color: #3d3d3d !important; } }
 h1, h2, h3, h4, .brand, .phead, h3.sh, .card h3, .pop h3, details.qa summary { color: #222222; }
 :root[data-theme="dark"] :is(h1, h2, h3, h4, .brand, .phead, h3.sh, .card h3, .pop h3, details.qa summary) { color: var(--fg); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) :is(h1, h2, h3, h4, .brand, .phead, h3.sh, .card h3, .pop h3, details.qa summary) { color: var(--fg); } }
@@ -491,36 +491,113 @@ header.intro { padding-block: 28px 0; }
 #svc::-webkit-scrollbar, .gpills::-webkit-scrollbar, .pills::-webkit-scrollbar { display: none !important; width: 0; height: 0; }
 #svc .tile, #svc .tile[aria-pressed="true"] { box-shadow: none !important; }
 #svc .ctile { position: relative; }
+html:root body .pop, html:root body .hcard, html:root body article.card, html:root body .bencard, html:root[data-theme="dark"] body .pop, html:root[data-theme="dark"] body .hcard, html:root[data-theme="dark"] body article.card, html:root[data-theme="dark"] body .bencard { border: 0 !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body .pop, html:root:not([data-theme="light"]) body .hcard, html:root:not([data-theme="light"]) body article.card, html:root:not([data-theme="light"]) body .bencard { border: 0 !important; } }
+.credit-link { color: inherit; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.credit-link:hover { color: #3B84F3; }
+.benrow { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; margin-inline: -16px; margin-block: -18px -16px; padding: 24px 16px 34px; scroll-padding-inline: 16px; scrollbar-width: none; -ms-overflow-style: none; -webkit-overflow-scrolling: touch; }
+.benrow::-webkit-scrollbar { display: none; }
+.bencard { flex: 0 0 min(78%, 270px); scroll-snap-align: start; text-align: left; font: inherit; background: var(--surface); color: var(--fg); border: 1px solid #f0f0f0; border-radius: 30px; padding: 20px; display: flex; flex-direction: column; gap: 10px; min-height: 190px; box-sizing: border-box; }
+button.bencard { cursor: pointer; }
+html:root body .popgrid > *, html:root body .pop, html:root body .hcard, html:root body article.card, html:root body .bencard { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08) !important; }
+html:root[data-theme="dark"] body .popgrid > *, html:root[data-theme="dark"] body .pop, html:root[data-theme="dark"] body .hcard, html:root[data-theme="dark"] body article.card, html:root[data-theme="dark"] body .bencard { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.45) !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body .popgrid > *, html:root:not([data-theme="light"]) body .pop, html:root:not([data-theme="light"]) body .hcard, html:root:not([data-theme="light"]) body article.card, html:root:not([data-theme="light"]) body .bencard { box-shadow: 0 4px 30px rgba(0, 0, 0, 0.45) !important; } }
+.benico { width: 46px; height: 46px; border-radius: 50%; background: #f2f2f2; color: #000000; display: grid; place-items: center; }
+.benlink { margin-top: auto; display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 600; color: #000000; }
+.benlink svg { width: 16px; height: 16px; }
+.benico svg { width: 24px; height: 24px; }
+.bent { font-family: var(--font-display); font-weight: 800; font-size: 1.05rem; color: #222222; line-height: 1.2; }
+.bend { font-size: 13.5px; line-height: 1.5; color: #8a8a8a; }
+:root[data-theme="dark"] .bencard { border-color: #3d3d3d; }
+:root[data-theme="dark"] .benico { background: #2e2e2e; color: #ffffff; }
+:root[data-theme="dark"] .benlink { color: #ffffff; }
+:root[data-theme="dark"] .bent { color: #ffffff; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .benico { background: #2e2e2e; color: #ffffff; } :root:not([data-theme="light"]) .benlink { color: #ffffff; } :root:not([data-theme="light"]) .bencard { border-color: #3d3d3d; } :root:not([data-theme="light"]) .bent { color: #ffffff; } }
+@media (min-width: 900px) { .benrow { flex-wrap: wrap; overflow: visible; margin-inline: 0; padding-inline: 0; } .bencard { flex: 1 1 calc(25% - 12px); } }
 .qclear[hidden] { display: none !important; }
 html:root body #svc button.tile.tile.tile[type], html:root body #svc button.tile.tile.tile[type][aria-pressed] { box-shadow: none !important; }
 h1 { margin-bottom: 22px !important; }
-html:root body select.lang { border: 1px solid #e3e3e3 !important; }
-html:root[data-theme="dark"] body select.lang { border-color: #3a4756 !important; }
-@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body select.lang { border-color: #3a4756 !important; } }
-html:root body #svc button.tile.tile.tile[type]:not([aria-pressed="true"]) { background: #ffffff !important; color: #000000 !important; border: 1px solid #e8e8e8 !important; }
-html:root body #svc button.tile.tile.tile[type][aria-pressed="true"] { border: 1px solid #3B84F3 !important; }
-html:root[data-theme="dark"] body #svc button.tile.tile.tile[type]:not([aria-pressed="true"]) { background: var(--surface) !important; color: #ffffff !important; border-color: #3a4756 !important; }
-@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body #svc button.tile.tile.tile[type]:not([aria-pressed="true"]) { background: var(--surface) !important; color: #ffffff !important; border-color: #3a4756 !important; } }
-.field input#q { box-shadow: 0 0 32px 5px rgba(20, 32, 44, 0.18) !important; }
-.field input#q:focus { box-shadow: 0 0 0 3px rgba(59, 132, 243, 0.25), 0 0 36px 7px rgba(20, 32, 44, 0.22) !important; }
-html:root body .field input#q:not(:focus) { border: 1px solid #82b0f6 !important; }
-html:root body .field input#q:focus { border-color: #3B84F3 !important; outline: none !important; }
+html:root body .pop, html:root body .hcard, html:root body article.card, html:root body .bencard { border-radius: 32px !important; padding: 13px !important; }
+html:root body .bencard { padding: 24px !important; }
+/* black & gray palette */
+html:root:root:root:root body #svc button.tile.tile.tile[type][aria-pressed="true"], html:root:root:root:root body .chip[aria-pressed="true"], html:root:root:root:root body a.book, html:root:root:root:root body .card a.book, html:root:root:root:root body .hcard a.book, html:root:root:root:root body .preseg button[aria-pressed="true"], html:root:root:root:root body .pcell[aria-pressed="true"] { background: #000000 !important; color: #ffffff !important; border-color: #000000 !important; }
+html:root:root:root:root body #svc button.tile.tile.tile[type][aria-pressed="true"], html:root:root:root:root body .chip[aria-pressed="true"], html:root:root:root:root body a.book, html:root:root:root:root body .card a.book, html:root:root:root:root body .hcard a.book { box-shadow: 0 0 8px rgba(0,0,0,0.55) !important; }
+html:root[data-theme="dark"]:root:root body #svc button.tile.tile.tile[type][aria-pressed="true"], html:root[data-theme="dark"]:root:root body .chip[aria-pressed="true"], html:root[data-theme="dark"]:root:root body a.book, html:root[data-theme="dark"]:root:root body .card a.book, html:root[data-theme="dark"]:root:root body .hcard a.book, html:root[data-theme="dark"]:root:root body .preseg button[aria-pressed="true"], html:root[data-theme="dark"]:root:root body .pcell[aria-pressed="true"] { background: #ffffff !important; color: #000000 !important; border-color: #ffffff !important; }
+html:root[data-theme="dark"]:root:root body #svc button.tile.tile.tile[type][aria-pressed="true"], html:root[data-theme="dark"]:root:root body .chip[aria-pressed="true"], html:root[data-theme="dark"]:root:root body a.book, html:root[data-theme="dark"]:root:root body .card a.book, html:root[data-theme="dark"]:root:root body .hcard a.book { box-shadow: 0 0 8px rgba(255,255,255,0.35) !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]):root:root body #svc button.tile.tile.tile[type][aria-pressed="true"], html:root:not([data-theme="light"]):root:root body .chip[aria-pressed="true"], html:root:not([data-theme="light"]):root:root body a.book, html:root:not([data-theme="light"]):root:root body .card a.book, html:root:not([data-theme="light"]):root:root body .hcard a.book, html:root:not([data-theme="light"]):root:root body .preseg button[aria-pressed="true"], html:root:not([data-theme="light"]):root:root body .pcell[aria-pressed="true"] { background: #ffffff !important; color: #000000 !important; border-color: #ffffff !important; } html:root:not([data-theme="light"]):root:root body #svc button.tile.tile.tile[type][aria-pressed="true"], html:root:not([data-theme="light"]):root:root body .chip[aria-pressed="true"], html:root:not([data-theme="light"]):root:root body a.book, html:root:not([data-theme="light"]):root:root body .card a.book, html:root:not([data-theme="light"]):root:root body .hcard a.book { box-shadow: 0 0 8px rgba(255,255,255,0.35) !important; } }
+html:root:root:root:root body #svc button.tile.tile.tile[type]:not([aria-pressed="true"]) { background: #f2f2f2 !important; color: #111111 !important; border: 0 !important; }
+html:root[data-theme="dark"]:root:root body #svc button.tile.tile.tile[type]:not([aria-pressed="true"]) { background: #2e2e2e !important; color: #ffffff !important; border: 0 !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]):root:root body #svc button.tile.tile.tile[type]:not([aria-pressed="true"]) { background: #2e2e2e !important; color: #ffffff !important; border: 0 !important; } }
+html:root:root:root:root body .theme-switch .knob, html:root:root:root:root body .theme-switch[aria-checked] .knob { background: #000000 !important; color: #ffffff !important; }
+html:root[data-theme="dark"]:root:root body .theme-switch .knob, html:root[data-theme="dark"]:root:root body .theme-switch[aria-checked] .knob { background: #ffffff !important; color: #000000 !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]):root:root body .theme-switch .knob, html:root:not([data-theme="light"]):root:root body .theme-switch[aria-checked] .knob { background: #ffffff !important; color: #000000 !important; } }
+html:root:root:root:root body .benico { background: #f2f2f2 !important; color: #000000 !important; }
+html:root[data-theme="dark"]:root:root body .benico { background: #2e2e2e !important; color: #ffffff !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]):root:root body .benico { background: #2e2e2e !important; color: #ffffff !important; } }
+html:root:root:root:root body #theme.theme-switch { background: #f2f2f2 !important; border: 0 !important; }
+html:root[data-theme="dark"]:root:root body #theme.theme-switch { background: #2e2e2e !important; border: 0 !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]):root:root body #theme.theme-switch { background: #2e2e2e !important; border: 0 !important; } }
+html:root:root:root:root body .field input#q:not(:focus) { border: 1px solid #6e6e6e !important; }
+html:root:root:root:root body .field input#q:focus { border-color: #000000 !important; box-shadow: 0 0 0 3px rgba(0,0,0,0.12), 0 0 36px 7px rgba(0,0,0,0.22) !important; }
+html:root[data-theme="dark"]:root:root body .field input#q:not(:focus) { border-color: #8a8a8a !important; }
+html:root[data-theme="dark"]:root:root body .field input#q:focus { border-color: #ffffff !important; box-shadow: 0 0 0 3px rgba(255,255,255,0.2), 0 0 36px 7px rgba(0,0,0,0.5) !important; }
+html:root body #theme.theme-switch { border: 1px solid #f0f0f0 !important; background: transparent !important; box-shadow: none !important; }
+html:root[data-theme="dark"] body #theme.theme-switch { border-color: #3d3d3d !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body #theme.theme-switch { border-color: #3d3d3d !important; } }
+html:root body .card.pre .preseg button.preb, html:root body .card.pre .preseg button[aria-pressed="true"], html:root body .card.pre .pcell[aria-pressed="true"], html:root body .card.pre .preseg button[aria-pressed], html:root body .card.pre .pcell[aria-pressed], html:root[data-theme="dark"] body .card.pre .preseg button[aria-pressed], html:root[data-theme="dark"] body .card.pre .pcell[aria-pressed], html:root body .preseg button, html:root body .preseg button[aria-pressed], html:root body .pcell, html:root body .pcell[aria-pressed], html:root[data-theme="dark"] body .preseg button, html:root[data-theme="dark"] body .pcell { box-shadow: none !important; }
+html:root[data-theme="light"] body .qclear { background: #e8e8e8 !important; color: #111111 !important; }
+html:root[data-theme="light"] body details.qa summary::after { border-color: #b0b0b0 !important; }
+html:root[data-theme="light"] body .preseg button:not([aria-pressed="true"]), html:root[data-theme="light"] body .pcell:not([aria-pressed="true"]) { background: #f2f2f2 !important; color: #000000 !important; border-color: transparent !important; }
+html:root body .popgrid > *, html:root body .pop, html:root body .hcard, html:root body article.card, html:root body .bencard { background: transparent !important; }
+html:root body .pop .pop-art, html:root body .hcard .pop-art { margin: 0 !important; border-radius: 24px !important; }
+html:root body .pop .pop-body, html:root body .hcard .pop-body { padding: 14px 0 0 !important; }
+html:root body .pop.noart .pop-body { padding: 0 !important; }
+html:root body .art.banner, html:root body .banner { border-radius: 24px !important; }
+html:root body .morebtn { border: 1px solid #d6d6d6 !important; box-shadow: none !important; background: transparent !important; }
+html:root[data-theme="dark"] body .morebtn { background: transparent !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body .morebtn { background: transparent !important; } }
+html:root[data-theme="dark"] body .morebtn { border: 1px solid #555555 !important; box-shadow: none !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body .morebtn { border: 1px solid #555555 !important; box-shadow: none !important; } }
+html:root body .pop, html:root body .hcard, html:root body article.card, html:root body .bencard, html:root[data-theme="dark"] body .pop, html:root[data-theme="dark"] body .hcard, html:root[data-theme="dark"] body article.card, html:root[data-theme="dark"] body .bencard { border: 0 !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body .pop, html:root:not([data-theme="light"]) body .hcard, html:root:not([data-theme="light"]) body article.card, html:root:not([data-theme="light"]) body .bencard { border: 0 !important; } }
+html:root[data-theme="dark"] body a.book, html:root[data-theme="dark"] body .chip[aria-pressed="true"], html:root[data-theme="dark"] body .preseg button[aria-pressed="true"], html:root[data-theme="dark"] body .pcell[aria-pressed="true"], html:root[data-theme="dark"] body #svc button.tile.tile.tile[type][aria-pressed="true"] { background: #ffffff !important; color: #000000 !important; border-color: #ffffff !important; box-shadow: 0 0 8px rgba(255,255,255,0.35) !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body a.book, html:root:not([data-theme="light"]) body .chip[aria-pressed="true"], html:root:not([data-theme="light"]) body .preseg button[aria-pressed="true"], html:root:not([data-theme="light"]) body .pcell[aria-pressed="true"], html:root:not([data-theme="light"]) body #svc button.tile.tile.tile[type][aria-pressed="true"] { background: #ffffff !important; color: #000000 !important; border-color: #ffffff !important; box-shadow: 0 0 8px rgba(255,255,255,0.35) !important; } }
+html:root body .theme-switch .knob, html:root body .theme-switch[aria-checked] .knob { background: #000000 !important; color: #ffffff !important; box-shadow: none !important; border: 0 !important; }
+html:root[data-theme="dark"] body .theme-switch .knob, html:root[data-theme="dark"] body .theme-switch[aria-checked] .knob { background: #ffffff !important; color: #000000 !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body .theme-switch .knob, html:root:not([data-theme="light"]) body .theme-switch[aria-checked] .knob { background: #ffffff !important; color: #000000 !important; } }
+html:root body .theme-switch { border: 0 !important; box-shadow: none !important; background: #f2f2f2 !important; }
+html:root body select.lang { border: 0 !important; box-shadow: none !important; background: transparent !important; }
+html:root[data-theme="dark"] body select.lang { border: 0 !important; }
+html:root[data-theme="dark"] body .theme-switch { border: 0 !important; }
+html:root[data-theme="dark"] body .theme-switch { border: 1px solid #555555 !important; background: transparent !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body select.lang { border: 0 !important; } html:root:not([data-theme="light"]) body .theme-switch { border: 0 !important; } html:root:not([data-theme="light"]) body .theme-switch { border: 0 solid #555555 !important; background: transparent !important; } }
+html:root body #svc button.tile.tile.tile[type]:not([aria-pressed="true"]) { background: transparent !important; color: #000000 !important; border: 1px solid #f0f0f0 !important; }
+html:root body #svc button.tile.tile.tile[type][aria-pressed="true"] { border: 1px solid #000000 !important; }
+html:root[data-theme="dark"] body #svc button.tile.tile.tile[type]:not([aria-pressed="true"]) { background: transparent !important; color: #ffffff !important; border: 1px solid #3d3d3d !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body #svc button.tile.tile.tile[type]:not([aria-pressed="true"]) { background: transparent !important; color: #ffffff !important; border: 1px solid #3d3d3d !important; } }
+.field input#q { box-shadow: 0 0 32px 5px rgba(0, 0, 0, 0.18) !important; }
+.field input#q:focus { box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12), 0 0 36px 7px rgba(0, 0, 0, 0.22) !important; }
+html:root body .field input#q:not(:focus) { border: 1px solid #c4c4c4 !important; }
+html:root body .field input#q:focus { border-color: #000000 !important; outline: none !important; }
+html:root[data-theme="dark"] body .field input#q:not(:focus) { border-color: #7f8c9b !important; }
+html:root[data-theme="dark"] body .field input#q:focus { border-color: #ffffff !important; }
+@media (prefers-color-scheme: dark) { html:root:not([data-theme="light"]) body .field input#q:not(:focus) { border-color: #7f8c9b !important; } html:root:not([data-theme="light"]) body .field input#q:focus { border-color: #ffffff !important; } }
 h1 { font-size: clamp(calc(1.8rem + 2px), calc(6.4vw + 2px), calc(3.1rem + 2px)) !important; }
-.field input#q::placeholder { color: #7d858e !important; opacity: 1; }
-.qicon { color: #7d858e !important; }
+.field input#q::placeholder { color: #8a8a8a !important; opacity: 1; }
+.qicon { color: #8a8a8a !important; }
 :root[data-theme="dark"] .field input#q::placeholder, :root[data-theme="dark"] .qicon { color: #7f8c9b !important; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .field input#q::placeholder, :root:not([data-theme="light"]) .qicon { color: #7f8c9b !important; } }
 @media (max-width: 370px) { .field input#q::placeholder { font-size: 15px; } }
 html, body { margin: 0; }
 @media (max-width: 719px) { #svc { margin-inline: -16px !important; padding-inline: 16px !important; scroll-padding-inline: 16px; } }
-#svc button.tile.tile[type][aria-pressed="true"], .chip[aria-pressed="true"], a.book, .card a.book, .hcard a.book, .card.pre .preseg button[aria-pressed="true"], .card.pre .pcell[aria-pressed="true"], .preseg button[aria-pressed="true"], .pcell[aria-pressed="true"], :root[data-theme="dark"] a.book, :root[data-theme="dark"] #svc .tile[aria-pressed="true"], :root[data-theme="dark"] .preseg button[aria-pressed="true"], :root[data-theme="dark"] .pcell[aria-pressed="true"] { box-shadow: 0 0 8px rgba(59,132,243,0.55) !important; }
+#svc button.tile.tile[type][aria-pressed="true"], .chip[aria-pressed="true"], a.book, .card a.book, .hcard a.book, .card.pre .preseg button[aria-pressed="true"], .card.pre .pcell[aria-pressed="true"], .preseg button[aria-pressed="true"], .pcell[aria-pressed="true"], :root[data-theme="dark"] a.book, :root[data-theme="dark"] #svc .tile[aria-pressed="true"], :root[data-theme="dark"] .preseg button[aria-pressed="true"], :root[data-theme="dark"] .pcell[aria-pressed="true"] { box-shadow: 0 0 8px rgba(0,0,0,0.55) !important; }
 #svc button.tile.tile[type] { min-height: 36px !important; padding: 5px 15px !important; font-size: 13px !important; font-weight: 500 !important; border: 0 !important; border-radius: 999px !important; background: #f6f6f6 !important; color: #000 !important; box-shadow: var(--btn-shadow) !important; }
-#svc button.tile.tile[type][aria-pressed="true"] { background: #3B84F3 !important; color: #ffffff !important; box-shadow: 0 0 8px rgba(59,132,243,0.55) !important; }
-:root[data-theme="dark"] #svc button.tile.tile[type]:not([aria-pressed="true"]) { background: #2b3440 !important; color: #fff !important; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #svc button.tile.tile[type]:not([aria-pressed="true"]) { background: #2b3440 !important; color: #fff !important; } }
+#svc button.tile.tile[type][aria-pressed="true"] { background: #000000 !important; color: #ffffff !important; box-shadow: 0 0 8px rgba(0,0,0,0.55) !important; }
+:root[data-theme="dark"] #svc button.tile.tile[type]:not([aria-pressed="true"]) { background: #2e2e2e !important; color: #fff !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #svc button.tile.tile[type]:not([aria-pressed="true"]) { background: #2e2e2e !important; color: #fff !important; } }
 .chip[aria-pressed="true"], #svc .tile[aria-pressed="true"], .tile[aria-pressed="true"], .card a.book, .hcard a.book, .viewall, .preseg button[aria-pressed="true"], .pcell[aria-pressed="true"], .theme-switch[aria-checked="false"] .knob,
-:root[data-theme="dark"] #svc .tile[aria-pressed="true"], :root[data-theme="dark"] .chip[aria-pressed="true"], :root[data-theme="dark"] .preseg button[aria-pressed="true"], :root[data-theme="dark"] .pcell[aria-pressed="true"], :root[data-theme="dark"] a.book { background: #3B84F3 !important; color: #ffffff !important; border-color: #3B84F3 !important; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #svc .tile[aria-pressed="true"], :root:not([data-theme="light"]) .chip[aria-pressed="true"], :root:not([data-theme="light"]) .preseg button[aria-pressed="true"], :root:not([data-theme="light"]) .pcell[aria-pressed="true"], :root:not([data-theme="light"]) a.book, :root:not([data-theme="light"]) .theme-switch[aria-checked="false"] .knob { background: #3B84F3 !important; color: #ffffff !important; border-color: #3B84F3 !important; } }
+:root[data-theme="dark"] #svc .tile[aria-pressed="true"], :root[data-theme="dark"] .chip[aria-pressed="true"], :root[data-theme="dark"] .preseg button[aria-pressed="true"], :root[data-theme="dark"] .pcell[aria-pressed="true"], :root[data-theme="dark"] a.book { background: #000000 !important; color: #ffffff !important; border-color: #000000 !important; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #svc .tile[aria-pressed="true"], :root:not([data-theme="light"]) .chip[aria-pressed="true"], :root:not([data-theme="light"]) .preseg button[aria-pressed="true"], :root:not([data-theme="light"]) .pcell[aria-pressed="true"], :root:not([data-theme="light"]) a.book, :root:not([data-theme="light"]) .theme-switch[aria-checked="false"] .knob { background: #000000 !important; color: #ffffff !important; border-color: #000000 !important; } }
 .hcard .pop-n { margin-bottom: 14px; }
 .card a.book { margin-top: 18px !important; }
 :root { --btn-shadow: 0 0 1px rgba(0,0,0,0.25), 0 0 7px rgba(0,0,0,0.20); }
@@ -529,8 +606,8 @@ html, body { margin: 0; }
 .chip, .morebtn, a.book, .preseg button, .pcell, .more-btn, #more-btn { box-shadow: var(--btn-shadow) !important; }
 .pcell { border-color: transparent !important; }
 .morebtn, #more-btn { box-shadow: 0 0 3px rgba(0,0,0,0.08) !important; }
-.chip[aria-pressed="true"], a.book, .preseg button[aria-pressed="true"], .pcell[aria-pressed="true"] { box-shadow: 0 0 8px rgba(59,132,243,0.55) !important; }
-:root[data-theme="dark"] a.book, :root[data-theme="dark"] .preseg button[aria-pressed="true"], :root[data-theme="dark"] .pcell[aria-pressed="true"] { box-shadow: 0 0 8px rgba(59,132,243,0.55) !important; }
+.chip[aria-pressed="true"], a.book, .preseg button[aria-pressed="true"], .pcell[aria-pressed="true"] { box-shadow: 0 0 8px rgba(0,0,0,0.55) !important; }
+:root[data-theme="dark"] a.book, :root[data-theme="dark"] .preseg button[aria-pressed="true"], :root[data-theme="dark"] .pcell[aria-pressed="true"] { box-shadow: 0 0 8px rgba(0,0,0,0.55) !important; }
 #svc .ctile::after { content: ""; flex: none; width: 6px; height: 6px; margin: -3px 1px 0 2px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); pointer-events: none; }
 .pop.noart .pop-body { padding-top: 20px; }
 .pre-amt { font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; color: var(--fg); margin-top: 6px; }
@@ -550,30 +627,29 @@ html, body { margin: 0; }
 .prebk li small { display: block; font-size: 12px; color: #9d9d9d; margin-top: 2px; }
 .prebk li b { font-weight: 700; white-space: nowrap; }
 .prebk li.tot { border-bottom: 0; font-size: 16px; font-weight: 700; }
-:root[data-theme="dark"] .preseg button { background: #2b3440 !important; color: #fff !important; }
+:root[data-theme="dark"] .preseg button { background: #2e2e2e !important; color: #fff !important; }
 :root[data-theme="dark"] .preseg button[aria-pressed="true"], :root[data-theme="dark"] .pcell[aria-pressed="true"] { background: #fff; color: #000; border-color: #fff; }
-:root[data-theme="dark"] .pcell, :root[data-theme="dark"] .prebk li { border-color: #3a4756; }
+:root[data-theme="dark"] .pcell, :root[data-theme="dark"] .prebk li { border-color: #3d3d3d; }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .preseg button { background: #2b3440 !important; color: #fff !important; }
+  :root:not([data-theme="light"]) .preseg button { background: #2e2e2e !important; color: #fff !important; }
   :root:not([data-theme="light"]) .preseg button[aria-pressed="true"], :root:not([data-theme="light"]) .pcell[aria-pressed="true"] { background: #fff; color: #000; border-color: #fff; }
-  :root:not([data-theme="light"]) .pcell, :root:not([data-theme="light"]) .prebk li { border-color: #3a4756; }
+  :root:not([data-theme="light"]) .pcell, :root:not([data-theme="light"]) .prebk li { border-color: #3d3d3d; }
 }
 #svc .ctile select { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 16px; border: 0; background: transparent; appearance: none; -webkit-appearance: none; }
 @keyframes itemin { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
-.popgrid > :nth-child(n+8), #homeqlist > details:nth-child(n+9) { animation: itemin .42s cubic-bezier(.2,.7,.2,1) both; }
-.popgrid > :nth-child(8), #homeqlist > details:nth-child(9) { animation-delay: .02s; }
-.popgrid > :nth-child(9), #homeqlist > details:nth-child(10) { animation-delay: .07s; }
-.popgrid > :nth-child(10), #homeqlist > details:nth-child(11) { animation-delay: .12s; }
-.popgrid > :nth-child(11), #homeqlist > details:nth-child(12) { animation-delay: .17s; }
-.popgrid > :nth-child(12), #homeqlist > details:nth-child(13) { animation-delay: .22s; }
-.popgrid > :nth-child(n+13), #homeqlist > details:nth-child(n+14) { animation-delay: .27s; }
-details.qa .ans { overflow: hidden; }
+.popgrid > :nth-child(n+6), #homeqlist > details:nth-child(n+6) { animation: itemin .42s cubic-bezier(.2,.7,.2,1) both; }
+.popgrid > :nth-child(6), #homeqlist > details:nth-child(6) { animation-delay: .02s; }
+.popgrid > :nth-child(7), #homeqlist > details:nth-child(7) { animation-delay: .07s; }
+.popgrid > :nth-child(8), #homeqlist > details:nth-child(8) { animation-delay: .12s; }
+.popgrid > :nth-child(9), #homeqlist > details:nth-child(9) { animation-delay: .17s; }
+.popgrid > :nth-child(10), #homeqlist > details:nth-child(10) { animation-delay: .22s; }
+.popgrid > :nth-child(n+11), #homeqlist > details:nth-child(n+11) { animation-delay: .27s; }
 @media (prefers-reduced-motion: reduce) { .popgrid > *, #homeqlist > details { animation: none !important; } }
 .phead { font-weight: 800; font-size: clamp(1.15rem, 3.5vw, 1.45rem); }
 h3.sh { font-weight: 800; font-size: 1rem; }
 #svcrow { margin-top: 6px !important; padding-top: 0 !important; border-top: 0 !important; overflow: visible !important; }
-:root[data-theme="dark"] #svcrow { border-top-color: #3a4756; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #svcrow { border-top-color: #3a4756; } }
+:root[data-theme="dark"] #svcrow { border-top-color: #3d3d3d; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) #svcrow { border-top-color: #3d3d3d; } }
 .controls .row { row-gap: 0; }
 .field input { min-height: 62px !important; padding: 16px 24px !important; font-size: 17.5px !important; }
 .field input#q { padding-right: 58px !important; }
@@ -656,6 +732,7 @@ h1 { margin-bottom: 32px; }
   <section class="popular" id="turpop"><h2 class="phead" data-i18n="sec_tur"></h2><div class="popgrid hotgrid" id="turgrid"></div></section>
   <section class="popular" id="prepop"><h2 class="phead" data-i18n="sec_pre"></h2><div class="popgrid hotgrid" id="pregrid"></div></section>
   <section class="popular" id="homeqs"><h2 class="phead" data-i18n="sec_gui"></h2><div class="qalist" id="homeqlist"></div></section>
+  <section class="popular" id="benefits"><h2 class="phead" data-i18n="ben_h"></h2><div class="benrow" id="benrow"></div></section>
   <div class="more" id="more" hidden><button class="chip" id="more-btn" type="button"></button></div>
 
   <div class="empty" id="empty" hidden>
@@ -668,7 +745,7 @@ h1 { margin-bottom: 32px; }
       <h2><svg viewBox="0 0 32 32" aria-hidden="true"><g transform="rotate(14 16 16)"><path fill="currentColor" d="M15 17C13 9.500 7 6 .5 8.500c4.500.2 8 2.500 10.500 6.500 1 1.800 2.200 3.200 3.500 4z"/><path fill="currentColor" d="M17 17C19 9.500 25 6 31.500 8.500c-4.500.2-8 2.500-10.500 6.500-1 1.800-2.200 3.200-3.500 4z"/><path fill="currentColor" d="M9 22.500c3-1.800 6-4.200 9.500-6.200l1.500-1.700c1.200-1 2.800-.5 3 .8l3.500.9-3.600 1c-.6 1.400-1.600 2.500-3 3C16.500 21.700 12.500 22.800 9 22.500z"/></g></svg><span>Traveruz</span></h2>
       <p data-i18n="foottxt"></p>
     </div>
-    <p class="credit"><span>Traveruz Inc. | </span><span data-i18n="createdby"></span> Rubén Albornoz</p>
+    <p class="credit"><span>Traveruz Inc. | </span><span data-i18n="createdby"></span> <a class="credit-link" href="https://rualbornoz.framer.website" target="_blank" rel="noopener noreferrer">Rubén Albornoz</a></p>
   </footer>
 
 </div>
@@ -840,6 +917,7 @@ h1 { margin-bottom: 32px; }
     sec_mus: ["Museos", "Museums", "Museus"],
     sec_tra: ["Trámites y papeleos", "Paperwork & requirements", "Trâmites e papelada"],
     sec_vis: ["Visados", "Visas", "Vistos"],
+    ben_h: ["Organiza tu viaje hoy", "Plan your trip today", "Organize sua viagem hoje"],
     sec_pre: ["Presupuestos de viaje", "Travel budgets", "Orçamentos de viagem"],
     pre_note: ["Cifras referenciales en USD, escritas de memoria y sin precios en vivo: cambian con la temporada, el tipo de cambio y la inflación. Los vuelos se calculan desde Santiago de Chile. Úsalas como orientación y confirma en los sitios oficiales antes de reservar.", "Reference figures in USD, written from memory with no live prices: they change with season, exchange rates and inflation. Flights are estimated from Santiago, Chile. Use them as a guide and confirm on official sites before booking.", "Valores de referência em USD, escritos de memória e sem preços em tempo real: mudam com a temporada, o câmbio e a inflação. Os voos são estimados a partir de Santiago do Chile. Use como orientação e confirme nos sites oficiais antes de reservar."],
     p_lv0: ["Económico", "Budget", "Econômico"],
@@ -892,23 +970,24 @@ h1 { margin-bottom: 32px; }
     crumbLabel: ["Ruta de navegación", "Breadcrumb", "Caminho de navegação"],
     pop: ["Destinos populares", "Popular destinations", "Destinos populares"],
     seeall: ["Ver todo", "See all", "Ver tudo"],
-    bk_hot: ["Reservar hotel", "Book hotel", "Reservar hotel"],
-    bk_air: ["Reservar vuelo", "Book flight", "Reservar voo"],
-    bk_tur: ["Reservar tour", "Book tour", "Reservar tour"],
-    bk_att: ["Reservar atracción", "Book attraction", "Reservar atração"],
-    bk_mus: ["Reservar museo", "Book museum", "Reservar museu"],
-    bk_age: ["Reservar con agencia", "Book with agency", "Reservar com agência"],
-    bk_cru: ["Reservar crucero", "Book cruise", "Reservar cruzeiro"],
-    bk_car: ["Reservar auto", "Book car", "Reservar carro"],
+    bk_hot: ["Ver hotel", "View hotel", "Ver hotel"],
+    bk_air: ["Ver vuelo", "View flight", "Ver voo"],
+    bk_tur: ["Ver tour", "View tour", "Ver tour"],
+    bk_att: ["Ver atracción", "View attraction", "Ver atração"],
+    bk_mus: ["Ver museo", "View museum", "Ver museu"],
+    bk_age: ["Ver con agencia", "View with agency", "Ver com agência"],
+    bk_cru: ["Ver crucero", "View cruise", "Ver cruzeiro"],
+    bk_car: ["Ver auto", "View car", "Ver carro"],
     bk_vis: ["Ver sitio visado", "See visa site", "Ver site do visto"],
     bk_bus: ["Ver sitio buses", "See bus site", "Ver site de ônibus"],
     bk_trn: ["Ver sitio trenes", "See train site", "Ver site de trens"],
     bk_fer: ["Ver sitio ferris", "See ferry site", "Ver site de balsas"],
     bk_trf: ["Ver sitio traslados", "See transfer site", "Ver site de traslados"],
-    book: ["Reservar en su web", "Book on their website", "Reservar no site"],
+    book: ["Ver en su web", "View on their website", "Ver no site"],
     sec_gui: ["Preguntas del destino", "Destination questions", "Perguntas do destino"],
     sec_tip: ["Tips de viaje", "Travel tips", "Dicas de viagem"],
     viewall: ["Ver todos", "View all", "Ver todos"], viewless: ["Ver menos", "Show less", "Ver menos"], seemore: ["Ver más", "See more", "Ver mais"],
+    more_pop: ["Más destinos", "More destinations", "Mais destinos"], more_hot: ["Más hoteles", "More hotels", "Mais hotéis"], more_att: ["Más atracciones", "More attractions", "Mais atrações"], more_pre: ["Más presupuestos", "More budgets", "Mais orçamentos"], more_tur: ["Más tours", "More tours", "Mais tours"], more_qs: ["Más preguntas", "More questions", "Mais perguntas"],
     hotpop: ["Hoteles más buscados", "Most searched hotels", "Hotéis mais procurados"],
     gsec: ["Preguntas del destino", "Destination questions", "Perguntas do destino"],
     sec_trf: ["Traslados y apps de transporte", "Transfers and ride apps", "Traslados e apps de transporte"],
@@ -2838,10 +2917,10 @@ h1 { margin-bottom: 32px; }
     }
     return out;
   }
-  function moreWrap(sec, open, setter) {
+  function moreWrap(sec, open, setter, key) {
     var old = sec.querySelector(".morewrap"); if (old) old.remove();
     var w = el("div", "morewrap");
-    var b = el("button", "morebtn", open ? t("viewless") : t("seemore")); b.type = "button";
+    var b = el("button", "morebtn", open ? t("viewless") : t(key || "seemore")); b.type = "button";
     b.setAttribute("aria-expanded", String(open));
     b.addEventListener("click", setter);
     w.appendChild(b); sec.appendChild(w);
@@ -2851,7 +2930,7 @@ h1 { margin-bottom: 32px; }
     var host = $("hotgrid"); host.textContent = "";
     if (!show) return;
     var base = HOTPOP.map(function (n) { return items.filter(function (x) { return x.type === "hot" && x.name === n; })[0]; }).filter(Boolean);
-    var hl = base.slice(0, 7);
+    var hl = base.slice(0, 5);
     if (hotAll) hl = base.concat(spreadByCountry(items.filter(function (x) { return x.type === "hot" && x.dom && ["Cadena", "Hotel de lujo", "Resort"].indexOf(x.sub) >= 0 && HOTPOP.indexOf(x.name) < 0; }), 7));
     hl.forEach(function (it, k) {
       var c = el("article", "pop hcard");
@@ -2872,7 +2951,7 @@ h1 { margin-bottom: 32px; }
       }
       host.appendChild(c);
     });
-    moreWrap(sec, hotAll, function () { hotAll = !hotAll; renderHotPop(true); });
+    moreWrap(sec, hotAll, function () { hotAll = !hotAll; renderHotPop(true); }, "more_hot");
   }
 
   var ATTPOP = ["Walt Disney World Resort", "Universal Studios Japan (Super Nintendo World)", "Oktoberfest", "Mardi Gras", "Carnaval de Río de Janeiro", "Akihabara (Electric Town)", "Songkran", "Fantasilandia"];
@@ -2936,7 +3015,7 @@ h1 { margin-bottom: 32px; }
     var host = $("attgrid"); host.textContent = "";
     if (!show) return;
     var abase = ATTPOP.map(function (n) { return items.filter(function (x) { return x.type === "att" && x.name === n; })[0]; }).filter(Boolean);
-    var al = abase.slice(0, 7);
+    var al = abase.slice(0, 5);
     if (attAll) al = abase.concat(spreadByCountry(items.filter(function (x) { return x.type === "att" && x.dom && ["Parque temático", "Festival cultural", "Festival de música", "Evento de temporada", "Zoológico y acuario"].indexOf(x.sub) >= 0 && ATTPOP.indexOf(x.name) < 0; }), 7));
     al.forEach(function (it, k) {
       var c = el("article", "pop hcard");
@@ -2949,10 +3028,44 @@ h1 { margin-bottom: 32px; }
       c.appendChild(body);
       host.appendChild(c);
     });
-    moreWrap(sec, attAll, function () { attAll = !attAll; renderAttPop(true); });
+    moreWrap(sec, attAll, function () { attAll = !attAll; renderAttPop(true); }, "more_att");
   }
   var TURPOP = ["GetYourGuide", "Viator", "Civitatis", "GuruWalk (free tours con guías locales)", "Withlocals", "ToursByLocals", "Context Travel", "Airbnb Experiences"];
   var turAll = false;
+
+  // --- Beneficios ---
+  var BEN = [
+    ["gui", "gui", ["Preguntas de destinos", "Destination questions", "Perguntas de destinos"], ["Preguntas frecuentes y tips de viaje para {n} destinos.", "FAQs and travel tips for {n} destinations.", "Perguntas frequentes e dicas de viagem para {n} destinos."], ["Ver preguntas", "See questions", "Ver perguntas"]],
+    ["pre", "pre", ["Presupuestos y simulador", "Budgets and simulator", "Orçamentos e simulador"], ["Estima hoteles, comidas, transporte y vuelos para 1 o 2 personas, de 1 a 3 semanas.", "Estimate hotels, food, transport and flights for 1 or 2 people, for 1 to 3 weeks.", "Estime hotéis, comida, transporte e voos para 1 ou 2 pessoas, de 1 a 3 semanas."], ["Ver presupuestos", "See budgets", "Ver orçamentos"]],
+    ["hot", "hot", ["Hoteles y vuelos", "Hotels and flights", "Hotéis e voos"], ["Cadenas hoteleras y aerolíneas con enlace directo a su sitio para reservar.", "Hotel chains and airlines with a direct link to their site to book.", "Redes de hotéis e companhias aéreas com link direto ao site para reservar."], ["Ver hoteles y vuelos", "See hotels and flights", "Ver hotéis e voos"]],
+    ["tur", "tur", ["Tours y guías independientes", "Tours and independent guides", "Tours e guias independentes"], ["Plataformas de tours y guías locales que ofrecen sus servicios por Instagram, YouTube o WhatsApp.", "Tour platforms and local guides who offer their services on Instagram, YouTube or WhatsApp.", "Plataformas de tours e guias locais que oferecem seus serviços no Instagram, YouTube ou WhatsApp."], ["Ver tours guiados", "See guided tours", "Ver tours guiados"]],
+    ["vis", "vis", ["Visados y trámites", "Visas and paperwork", "Vistos e trâmites"], ["Tipos de visa, requisitos de ingreso y papeleos explicados por país.", "Visa types, entry requirements and paperwork explained by country.", "Tipos de visto, requisitos de entrada e trâmites explicados por país."], ["Ver visados", "See visas", "Ver vistos"]],
+    ["att", "att", ["Atracciones y museos", "Attractions and museums", "Atrações e museus"], ["Parques temáticos, museos, festivales y hobbies para armar tu itinerario.", "Theme parks, museums, festivals and hobbies to build your itinerary.", "Parques temáticos, museus, festivais e hobbies para montar seu roteiro."], ["Ver atracciones", "See attractions", "Ver atrações"]],
+    ["bus", "bus", ["Transporte en destino", "Getting around", "Transporte no destino"], ["Traslados, arriendo de autos, buses, trenes, ferris y cruceros.", "Transfers, car rental, buses, trains, ferries and cruises.", "Traslados, aluguel de carros, ônibus, trens, balsas e cruzeiros."], ["Ver transporte", "See transport", "Ver transporte"]]
+  ];
+  function renderBen(show) {
+    var sec = $("benefits"); sec.hidden = !show;
+    var host = $("benrow"); host.textContent = "";
+    if (!show) return;
+    BEN.forEach(function (b) {
+      var c = el("button", "bencard");
+      c.type = "button";
+      var ic = el("span", "benico"); ic.appendChild(icon(b[0])); c.appendChild(ic);
+      c.appendChild(el("span", "bent", b[2][L]));
+      c.appendChild(el("span", "bend", b[3][L].replace("{n}", String(allUsed.length))));
+      var lk = el("span", "benlink", b[4][L]);
+      var ar = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      ar.setAttribute("viewBox", "0 0 24 24"); ar.setAttribute("fill", "none"); ar.setAttribute("stroke", "currentColor");
+      ar.setAttribute("stroke-width", "2"); ar.setAttribute("stroke-linecap", "round"); ar.setAttribute("stroke-linejoin", "round"); ar.setAttribute("aria-hidden", "true");
+      ar.innerHTML = '<path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>';
+      lk.appendChild(ar); c.appendChild(lk);
+      c.addEventListener("click", function () {
+        state.type = b[1]; state.limit = 8; render();
+        window.scrollTo({ top: Math.max(0, $("q").getBoundingClientRect().top + window.pageYOffset - 24), behavior: "smooth" });
+      });
+      host.appendChild(c);
+    });
+  }
 
   // --- Presupuestos ---
   function usd(n) { return "USD " + Math.round(n).toLocaleString(["es-CL", "en-US", "pt-BR"][L]); }
@@ -3035,7 +3148,7 @@ h1 { margin-bottom: 32px; }
     var host = $("pregrid"); host.textContent = "";
     if (!show) return;
     var list = POPULAR.filter(function (c) { return used[c] && BUD[c]; });
-    list = preAll ? list.slice(0, 15) : list.slice(0, 7);
+    list = preAll ? list.slice(0, 15) : list.slice(0, 5);
     list.forEach(function (c) {
       var bt = el("button", "pop hcard"); bt.type = "button";
       bt.classList.add("noart");
@@ -3056,7 +3169,7 @@ h1 { margin-bottom: 32px; }
       });
       host.appendChild(bt);
     });
-    moreWrap(sec, preAll, function () { preAll = !preAll; renderPrePop(true); });
+    moreWrap(sec, preAll, function () { preAll = !preAll; renderPrePop(true); }, "more_pre");
   }
   function turArt(n) {
     var p = PAL[HPAL[(n + 2) % HPAL.length]], id = "ta" + (artN++), out = "", i, x, y;
@@ -3073,7 +3186,7 @@ h1 { margin-bottom: 32px; }
     var host = $("turgrid"); host.textContent = "";
     if (!show) return;
     var base = TURPOP.map(function (n) { return items.filter(function (x) { return x.type === "tur" && x.name === n; })[0]; }).filter(Boolean);
-    var tl = base.slice(0, 7);
+    var tl = base.slice(0, 5);
     if (turAll) tl = base.concat(spreadByCountry(items.filter(function (x) { return x.type === "tur" && x.dom && TURPOP.indexOf(x.name) < 0 && x.ops.length < 6; }), 7));
     tl.forEach(function (it, k) {
       var c = el("article", "pop hcard");
@@ -3085,7 +3198,7 @@ h1 { margin-bottom: 32px; }
       c.appendChild(body);
       host.appendChild(c);
     });
-    moreWrap(sec, turAll, function () { turAll = !turAll; renderTurPop(true); });
+    moreWrap(sec, turAll, function () { turAll = !turAll; renderTurPop(true); }, "more_tur");
   }
   var homeQs = null;
   function pickHomeQs(n) {
@@ -3103,7 +3216,7 @@ h1 { margin-bottom: 32px; }
     var host = $("homeqlist"); host.textContent = "";
     if (!show) return;
     if (!homeQs) homeQs = pickHomeQs(16);
-    homeQs.slice(0, qAll ? 16 : 8).forEach(function (x) {
+    homeQs.slice(0, qAll ? 16 : 5).forEach(function (x) {
       var d = el("details", "qa"), sm = el("summary");
       var qw = el("div", "qwrap");
       qw.appendChild(el("span", "tag", x.g.name[L]));
@@ -3113,14 +3226,14 @@ h1 { margin-bottom: 32px; }
       d.appendChild(el("p", "ans", gtx(x, true)));
       host.appendChild(d);
     });
-    if (homeQs.length > 8) moreWrap(sec, qAll, function () { qAll = !qAll; renderHomeQs(true); });
+    if (homeQs.length > 8) moreWrap(sec, qAll, function () { qAll = !qAll; renderHomeQs(true); }, "more_qs");
   }
   var popAll = false;
   function renderPopular(show) {
     var sec = $("popular"); sec.hidden = !show;
     var host = $("popgrid"); host.textContent = "";
     if (!show) return;
-    var list = popAll ? POPULAR.filter(function (c) { return used[c]; }).concat(allUsed.filter(function (c) { return POPULAR.indexOf(c) < 0; })) : POPULAR.slice(0, 7);
+    var list = popAll ? POPULAR.filter(function (c) { return used[c]; }).concat(allUsed.filter(function (c) { return POPULAR.indexOf(c) < 0; })) : POPULAR.slice(0, 5);
     list.forEach(function (c) {
       if (!used[c]) return;
       var b = el("button", "pop"); b.type = "button";
@@ -3143,7 +3256,7 @@ h1 { margin-bottom: 32px; }
       });
       host.appendChild(b);
     });
-    moreWrap(sec, popAll, function () { popAll = !popAll; renderPopular(true); });
+    moreWrap(sec, popAll, function () { popAll = !popAll; renderPopular(true); }, "more_pop");
   }
 
   function sectionHead(tone, label, n) {
@@ -3323,6 +3436,7 @@ h1 { margin-bottom: 32px; }
     renderHotPop(!searching && state.type === "all");
     renderAttPop(!searching && state.type === "all");
     renderTurPop(!searching && state.type === "all");
+    renderBen(!searching && state.type === "all");
     renderPrePop(!searching && state.type === "all");
     renderHomeQs(!searching && state.type === "all");
     renderCrumbs(searching, countries);
