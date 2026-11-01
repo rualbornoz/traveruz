@@ -1,2 +1,2 @@
-# traveruz
-Guia para armar viajes
+# traveruz (Travel guide)
+Guía para armar viajes
