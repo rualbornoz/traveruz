@@ -619,7 +619,7 @@ html:root[data-theme="dark"] .svcnav { background: #242424; border-color: #55555
 .pop-d + .pop-n { margin-top: 10px; }
 html:root:root:root:root body .pop .pop-body, html:root:root:root:root body .hcard .pop-body { padding-left: 10px !important; padding-right: 10px !important; }
 @media (min-width: 720px) {
-  html:root body .wrap, html:root body .controls .row { max-width: 900px !important; }
+  html:root body .wrap, html:root body .controls .row { max-width: 1200px !important; }
   html:root body .popgrid, html:root body .hotgrid, html:root body .popgrid.hotgrid { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: 14px !important; }
   html:root body .popgrid > :first-child { display: grid !important; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; column-gap: 28px; text-align: left; }
   html:root body .popgrid > :first-child .pop-art { aspect-ratio: 4 / 3 !important; }
@@ -849,6 +849,8 @@ html:root:root:root:root:root:root:root:root:root:root:root body .preseg button[
 /* lighter weight for buttons and links */
 html:root:root:root:root:root:root:root:root:root:root:root:root body #svc button.tile, html:root:root:root:root:root:root:root:root:root:root:root:root body #svc button.tile.tile.tile.tile[type], html:root:root:root:root:root:root:root:root:root:root:root:root body .pop-go, html:root:root:root:root:root:root:root:root:root:root:root:root body .morebtn, html:root:root:root:root:root:root:root:root:root:root:root:root body a.book, html:root:root:root:root:root:root:root:root:root:root:root:root body .benlink, html:root:root:root:root:root:root:root:root:root:root:root:root body .viewall, html:root:root:root:root:root:root:root:root:root:root:root:root body .chip, html:root:root:root:root:root:root:root:root:root:root:root:root body .pcell, html:root:root:root:root:root:root:root:root:root:root:root:root body .preseg button, html:root:root:root:root:root:root:root:root:root:root:root:root body .crumbs a, html:root:root:root:root:root:root:root:root:root:root:root:root body .link { font-weight: 500 !important; }
 html:root:root:root:root:root:root:root:root:root:root:root:root body select.lang { font-weight: 400 !important; }
+
+@media (min-width: 1100px) { html:root:root:root body .popgrid > :first-child .pop-art, html:root:root:root body .hotgrid > :first-child .pop-art { aspect-ratio: 16 / 9 !important; } }
 </style>
 </head>
 <body>
