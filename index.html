@@ -619,15 +619,8 @@ html:root[data-theme="dark"] .svcnav { background: #242424; border-color: #55555
 .pop-d + .pop-n { margin-top: 10px; }
 html:root:root:root:root body .pop .pop-body, html:root:root:root:root body .hcard .pop-body { padding-left: 10px !important; padding-right: 10px !important; }
 @media (min-width: 720px) {
-  html:root body .wrap, html:root body .controls .row { max-width: 1200px !important; }
+  html:root body .wrap, html:root body .controls .row { max-width: 1024px !important; }
   html:root body .popgrid, html:root body .hotgrid, html:root body .popgrid.hotgrid { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; gap: 14px !important; }
-  html:root body .popgrid > :first-child { display: grid !important; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); align-items: center; column-gap: 28px; text-align: left; }
-  html:root body .popgrid > :first-child .pop-art { aspect-ratio: 4 / 3 !important; }
-  html:root body .popgrid > :first-child .pop-body { padding: 0 12px 0 0 !important; }
-  html:root body .popgrid > :first-child .pop-d { font-size: 17px; line-height: 1.55; -webkit-line-clamp: unset; display: block; }
-  html:root body .popgrid > :first-child h3 { font-size: 1.75rem !important; }
-  html:root body .popgrid > :first-child a.book { width: auto !important; align-self: start; padding-inline: 28px !important; }
-  html:root body .popgrid > :not(:first-child) .pop-art { aspect-ratio: 4 / 3; }
 }
 html:root:root:root:root body .morebtn { font-size: 16px !important; }
 html:root:root:root:root body a.book, html:root:root:root:root body .card a.book, html:root:root:root:root body .hcard a.book { font-size: 15px !important; }
@@ -850,7 +843,28 @@ html:root:root:root:root:root:root:root:root:root:root:root body .preseg button[
 html:root:root:root:root:root:root:root:root:root:root:root:root body #svc button.tile, html:root:root:root:root:root:root:root:root:root:root:root:root body #svc button.tile.tile.tile.tile[type], html:root:root:root:root:root:root:root:root:root:root:root:root body .pop-go, html:root:root:root:root:root:root:root:root:root:root:root:root body .morebtn, html:root:root:root:root:root:root:root:root:root:root:root:root body a.book, html:root:root:root:root:root:root:root:root:root:root:root:root body .benlink, html:root:root:root:root:root:root:root:root:root:root:root:root body .viewall, html:root:root:root:root:root:root:root:root:root:root:root:root body .chip, html:root:root:root:root:root:root:root:root:root:root:root:root body .pcell, html:root:root:root:root:root:root:root:root:root:root:root:root body .preseg button, html:root:root:root:root:root:root:root:root:root:root:root:root body .crumbs a, html:root:root:root:root:root:root:root:root:root:root:root:root body .link { font-weight: 500 !important; }
 html:root:root:root:root:root:root:root:root:root:root:root:root body select.lang { font-weight: 400 !important; }
 
-@media (min-width: 1100px) { html:root:root:root body .popgrid > :first-child .pop-art, html:root:root:root body .hotgrid > :first-child .pop-art { aspect-ratio: 16 / 9 !important; } }
+
+/* ===== Desktop layout (compact, less vertical) ===== */
+@media (min-width: 720px) {
+  html:root:root:root:root:root:root body .popgrid > :first-child { grid-column: auto !important; }
+  html:root:root:root:root:root:root body h1 { font-size: clamp(2.3rem, 4.4vw, 3.1rem) !important; margin-bottom: 20px !important; }
+  html:root:root:root:root:root:root body .popular + .popular { margin-top: 26px; }
+  html:root:root:root:root:root:root body .popgrid .pop-art, html:root:root:root:root:root:root body .hotgrid .pop-art { aspect-ratio: 16 / 11 !important; }
+  html:root:root:root:root:root:root body .popgrid > * .pop-d { display: -webkit-box !important; -webkit-box-orient: vertical; -webkit-line-clamp: 2 !important; overflow: hidden; font-size: 14.5px !important; line-height: 1.45 !important; }
+  html:root:root:root:root:root:root body .popgrid > * h3 { font-size: 1.1rem !important; }
+  html:root:root:root:root:root:root body .qalist { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 14px; align-items: start; }
+  html:root:root:root:root:root:root body .qalist .gname { grid-column: 1 / -1; }
+}
+@media (min-width: 900px) {
+  html:root:root:root:root:root:root body .popgrid, html:root:root:root:root:root:root body .hotgrid, html:root:root:root:root:root:root body .popgrid.hotgrid { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+  html:root:root:root:root:root:root body .popular:not(.open) .popgrid > :nth-child(5) { display: none !important; }
+  html:root:root:root:root:root:root body .mapcard { display: grid !important; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); column-gap: 22px; align-content: start; }
+  html:root:root:root:root:root:root body .mapcard > * { grid-column: 2; min-width: 0; }
+  html:root:root:root:root:root:root body .mapcard > .top, html:root:root:root:root:root:root body .mapcard > h3, html:root:root:root:root:root:root body .mapcard > .where { grid-column: 1 / -1; }
+  html:root:root:root:root:root:root body .mapcard > .map-real { grid-column: 1; grid-row: 4 / span 8; margin: 14px 0 0; }
+  html:root:root:root:root:root:root body .mapcard .map-real-canvas { height: 520px; }
+  html:root:root:root:root:root:root body .mapcard .map-stops { grid-template-columns: 1fr !important; }
+}
 </style>
 </head>
 <body>
@@ -3129,6 +3143,7 @@ html:root:root:root:root:root:root:root:root:root:root:root:root body select.lan
   }
   function moreWrap(sec, open, setter, key) {
     var old = sec.querySelector(".morewrap"); if (old) old.remove();
+    sec.classList.toggle("open", !!open);
     var w = el("div", "morewrap");
     var b = el("button", "morebtn", open ? t("viewless") : t(key || "seemore")); b.type = "button";
     b.setAttribute("aria-expanded", String(open));
